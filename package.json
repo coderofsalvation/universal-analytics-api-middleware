@@ -1,0 +1,26 @@
+{
+  "name": "universal-analytics-api-middleware",
+  "version": "1.0.0",
+  "description": "track your api usage using google universal analitycs",
+  "main": "index.js",
+  "directories": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "scripts": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderofsalvation/universal-analytics-api-middleware.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/universal-analytics-api-middleware/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/universal-analytics-api-middleware#readme",
+  "dependencies": {
+    "universal-analytics": "^0.4.8"
+  }
+}
