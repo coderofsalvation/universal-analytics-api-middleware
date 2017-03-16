@@ -8,25 +8,22 @@ track your api usage using google universal analytycs
 
 in your app.js
 
-		require('universal-analytics-api-middleware')({
-			"GA_TOKEN":"UA-09340980345",                     // your analytics token
-			"GA_BUFFERTIME": 5000,                           // buffer events and only send every 5 secs
-      "name":"myapi"
-		})
+                require('universal-analytics-api-middleware')({
+                        "GA_TOKEN":"UA-09340980345",                     // your analytics token
+                        "GA_BUFFERTIME": 5000,                           // buffer events and only send every 5 secs
+                        "name":"myapi", 
+                        "ignore":'[\.]',                                 // dont report files
+                        "context":process                                // object to bind 'ua' to
+                })
 
 
 ## Features
 
 * buffers high volume of requests, and pushes in batch to analytics (instead of rightaway)
-
-make sure you set these environment variables:
-
-* export NODE_ENV=production
-* export APINAME=myapi
-* export GA_BUFFERTIME=5000
+* automatically track api calls & responsetime as pageviews
+* easily track your own events
 
 Basically each request is buffered, and sent as google analytics events every `GA_BUFFERTIME` milliseconds.
-
 
 You can view realtime requests at `Realtime > Events`,  or create dashboards to sort/display the events.
 
