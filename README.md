@@ -29,10 +29,10 @@ You can view realtime requests at `Realtime > Events`,  or create dashboards to 
 
 > NOTE: you can add events to analytics,  anywhere from within deployd :
 
-    process.ga.event("action name", "label/value")      // buffered event (adviced)
-    process.ga.timing("category", "actionname", 12)     // buffered event (adviced)
-    console.error("something went wrong")                      // sends exception 
-    process.ga.ua                                       // universal analytics object for unbuffered use 
+    process.ua.event("action name", "label/value")      // buffered event (adviced)
+    process.ua.timing("category", "actionname", 12)     // buffered event (adviced)
+    console.error("something went wrong")               // sends exception 
+    process.ua.visitor                                  // universal analytics object for unbuffered use 
 
 }
 
