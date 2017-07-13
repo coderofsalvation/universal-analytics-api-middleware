@@ -26,8 +26,10 @@ in your app.js
 Basically each request is buffered, and sent as google analytics events every `GA_BUFFERTIME` milliseconds.
 
 You can view realtime requests at `Realtime > Events`,  or create dashboards to sort/display the events.
+				
+> NOTE 1: run 'npm install pidusage' to get cpu/memory stats too
 
-> NOTE: you can add events to analytics,  anywhere from within deployd :
+> NOTE 2: you can add events to analytics, anywhere in your code:
 
     process.ua.event("action name", "label/value")      // buffered event (adviced)
     process.ua.timing("category", "actionname", 12)     // buffered event (adviced)

@@ -1,6 +1,6 @@
 {
   "name": "universal-analytics-api-middleware",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "track your api usage using google universal analitycs",
   "main": "index.js",
   "directories": {
